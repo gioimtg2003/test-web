@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    background-color: antiquewhite;
+}
+
+body {
+    font-family: 'Public', sans-serif;
+    width: 100%;
+}
+
+.main {
+    background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
+}
+
+.box {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.box {
+    width: 90%;
+    height: 90vh;
+    background: rgb(81, 79, 79);
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.box:nth-child(1) {
+    margin-top: 20px;
+}
+
+.img-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    border-radius: 15px;
+    background-color: rgb(235, 239, 239);
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    height: 80px;
+    scroll-margin: 10px;
+}
+
+.img-icon>div>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.img1>img:hover {
+    background-color: antiquewhite;
+    transform: translate(-15px, -15px);
+    transition: 1s;
+    cursor: pointer;
+    animation: animation3 1.5s none;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.img2>img:hover {
+    background-color: antiquewhite;
+    transform: translateY(-15px);
+    transition: 1s;
+    cursor: pointer;
+    animation: animation3 1.5s none;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.img3>img:hover {
+    background-color: antiquewhite;
+    transform: translate(15px, -15px);
+    transition: 1s;
+    cursor: pointer;
+    animation: animation3 0.5s none;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+@keyframes animation1 {
+    0% {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animation3 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
